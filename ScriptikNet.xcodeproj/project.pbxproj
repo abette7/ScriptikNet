@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		982BC5EE1FAFC20900528B1D /* ScriptikNet.png in Resources */ = {isa = PBXBuildFile; fileRef = 982BC5ED1FAFC20900528B1D /* ScriptikNet.png */; };
+		9841EF3F1FAFC90200362119 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9841EF3D1FAFC90200362119 /* MainMenu.xib */; };
+		9841EF421FAFDE9300362119 /* ScriptikNetStopped.png in Resources */ = {isa = PBXBuildFile; fileRef = 9841EF401FAFDE9200362119 /* ScriptikNetStopped.png */; };
+		9841EF431FAFDE9300362119 /* ScriptikNetNotConnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9841EF411FAFDE9300362119 /* ScriptikNetNotConnected.png */; };
+		9859AAF31FB13B0F00442FE5 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98713EEB1FAF357F002A64DF /* CocoaAsyncSocket.framework */; };
+		9859AAF41FB13B0F00442FE5 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98713EEB1FAF357F002A64DF /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98713EBF1FAF355C002A64DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98713EBE1FAF355C002A64DF /* AppDelegate.m */; };
+		98713EC11FAF355C002A64DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98713EC01FAF355C002A64DF /* Assets.xcassets */; };
+		98713EC71FAF355C002A64DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98713EC61FAF355C002A64DF /* main.m */; };
+		98713ED21FAF355C002A64DF /* ScriptikNetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98713ED11FAF355C002A64DF /* ScriptikNetTests.m */; };
+		98713EDD1FAF355C002A64DF /* ScriptikNetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98713EDC1FAF355C002A64DF /* ScriptikNetUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98713ECE1FAF355C002A64DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98713EB21FAF355C002A64DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98713EB91FAF355C002A64DF;
+			remoteInfo = ScriptikNet;
+		};
+		98713ED91FAF355C002A64DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98713EB21FAF355C002A64DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98713EB91FAF355C002A64DF;
+			remoteInfo = ScriptikNet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9859AAF51FB13B0F00442FE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9859AAF41FB13B0F00442FE5 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		982BC5ED1FAFC20900528B1D /* ScriptikNet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScriptikNet.png; sourceTree = "<group>"; };
+		9841EF3E1FAFC90200362119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9841EF401FAFDE9200362119 /* ScriptikNetStopped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScriptikNetStopped.png; sourceTree = "<group>"; };
+		9841EF411FAFDE9300362119 /* ScriptikNetNotConnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScriptikNetNotConnected.png; sourceTree = "<group>"; };
+		98713EBA1FAF355C002A64DF /* ScriptikNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptikNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98713EBD1FAF355C002A64DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98713EBE1FAF355C002A64DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98713EC01FAF355C002A64DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98713EC51FAF355C002A64DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98713EC61FAF355C002A64DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98713EC81FAF355C002A64DF /* ScriptikNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScriptikNet.entitlements; sourceTree = "<group>"; };
+		98713ECD1FAF355C002A64DF /* ScriptikNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriptikNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98713ED11FAF355C002A64DF /* ScriptikNetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptikNetTests.m; sourceTree = "<group>"; };
+		98713ED31FAF355C002A64DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98713ED81FAF355C002A64DF /* ScriptikNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriptikNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98713EDC1FAF355C002A64DF /* ScriptikNetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptikNetUITests.m; sourceTree = "<group>"; };
+		98713EDE1FAF355C002A64DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98713EEB1FAF357F002A64DF /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = ../../../../../../../Library/Frameworks/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98713EB71FAF355C002A64DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9859AAF31FB13B0F00442FE5 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98713ECA1FAF355C002A64DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98713ED51FAF355C002A64DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98713EB11FAF355C002A64DF = {
+			isa = PBXGroup;
+			children = (
+				982BC5ED1FAFC20900528B1D /* ScriptikNet.png */,
+				9841EF411FAFDE9300362119 /* ScriptikNetNotConnected.png */,
+				9841EF401FAFDE9200362119 /* ScriptikNetStopped.png */,
+				98713EBC1FAF355C002A64DF /* ScriptikNet */,
+				98713ED01FAF355C002A64DF /* ScriptikNetTests */,
+				98713EDB1FAF355C002A64DF /* ScriptikNetUITests */,
+				98713EBB1FAF355C002A64DF /* Products */,
+				98713EEA1FAF357F002A64DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98713EBB1FAF355C002A64DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98713EBA1FAF355C002A64DF /* ScriptikNet.app */,
+				98713ECD1FAF355C002A64DF /* ScriptikNetTests.xctest */,
+				98713ED81FAF355C002A64DF /* ScriptikNetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98713EBC1FAF355C002A64DF /* ScriptikNet */ = {
+			isa = PBXGroup;
+			children = (
+				98713EBD1FAF355C002A64DF /* AppDelegate.h */,
+				98713EBE1FAF355C002A64DF /* AppDelegate.m */,
+				98713EC01FAF355C002A64DF /* Assets.xcassets */,
+				9841EF3D1FAFC90200362119 /* MainMenu.xib */,
+				98713EC51FAF355C002A64DF /* Info.plist */,
+				98713EC61FAF355C002A64DF /* main.m */,
+				98713EC81FAF355C002A64DF /* ScriptikNet.entitlements */,
+			);
+			path = ScriptikNet;
+			sourceTree = "<group>";
+		};
+		98713ED01FAF355C002A64DF /* ScriptikNetTests */ = {
+			isa = PBXGroup;
+			children = (
+				98713ED11FAF355C002A64DF /* ScriptikNetTests.m */,
+				98713ED31FAF355C002A64DF /* Info.plist */,
+			);
+			path = ScriptikNetTests;
+			sourceTree = "<group>";
+		};
+		98713EDB1FAF355C002A64DF /* ScriptikNetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98713EDC1FAF355C002A64DF /* ScriptikNetUITests.m */,
+				98713EDE1FAF355C002A64DF /* Info.plist */,
+			);
+			path = ScriptikNetUITests;
+			sourceTree = "<group>";
+		};
+		98713EEA1FAF357F002A64DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98713EEB1FAF357F002A64DF /* CocoaAsyncSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98713EB91FAF355C002A64DF /* ScriptikNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98713EE11FAF355C002A64DF /* Build configuration list for PBXNativeTarget "ScriptikNet" */;
+			buildPhases = (
+				98713EB61FAF355C002A64DF /* Sources */,
+				98713EB71FAF355C002A64DF /* Frameworks */,
+				98713EB81FAF355C002A64DF /* Resources */,
+				9859AAF51FB13B0F00442FE5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScriptikNet;
+			productName = ScriptikNet;
+			productReference = 98713EBA1FAF355C002A64DF /* ScriptikNet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98713ECC1FAF355C002A64DF /* ScriptikNetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98713EE41FAF355C002A64DF /* Build configuration list for PBXNativeTarget "ScriptikNetTests" */;
+			buildPhases = (
+				98713EC91FAF355C002A64DF /* Sources */,
+				98713ECA1FAF355C002A64DF /* Frameworks */,
+				98713ECB1FAF355C002A64DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98713ECF1FAF355C002A64DF /* PBXTargetDependency */,
+			);
+			name = ScriptikNetTests;
+			productName = ScriptikNetTests;
+			productReference = 98713ECD1FAF355C002A64DF /* ScriptikNetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98713ED71FAF355C002A64DF /* ScriptikNetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98713EE71FAF355C002A64DF /* Build configuration list for PBXNativeTarget "ScriptikNetUITests" */;
+			buildPhases = (
+				98713ED41FAF355C002A64DF /* Sources */,
+				98713ED51FAF355C002A64DF /* Frameworks */,
+				98713ED61FAF355C002A64DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98713EDA1FAF355C002A64DF /* PBXTargetDependency */,
+			);
+			name = ScriptikNetUITests;
+			productName = ScriptikNetUITests;
+			productReference = 98713ED81FAF355C002A64DF /* ScriptikNetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98713EB21FAF355C002A64DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Adam Betterton";
+				TargetAttributes = {
+					98713EB91FAF355C002A64DF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					98713ECC1FAF355C002A64DF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98713EB91FAF355C002A64DF;
+					};
+					98713ED71FAF355C002A64DF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98713EB91FAF355C002A64DF;
+					};
+				};
+			};
+			buildConfigurationList = 98713EB51FAF355C002A64DF /* Build configuration list for PBXProject "ScriptikNet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98713EB11FAF355C002A64DF;
+			productRefGroup = 98713EBB1FAF355C002A64DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98713EB91FAF355C002A64DF /* ScriptikNet */,
+				98713ECC1FAF355C002A64DF /* ScriptikNetTests */,
+				98713ED71FAF355C002A64DF /* ScriptikNetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98713EB81FAF355C002A64DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9841EF421FAFDE9300362119 /* ScriptikNetStopped.png in Resources */,
+				9841EF431FAFDE9300362119 /* ScriptikNetNotConnected.png in Resources */,
+				98713EC11FAF355C002A64DF /* Assets.xcassets in Resources */,
+				982BC5EE1FAFC20900528B1D /* ScriptikNet.png in Resources */,
+				9841EF3F1FAFC90200362119 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98713ECB1FAF355C002A64DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98713ED61FAF355C002A64DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98713EB61FAF355C002A64DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98713EC71FAF355C002A64DF /* main.m in Sources */,
+				98713EBF1FAF355C002A64DF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98713EC91FAF355C002A64DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98713ED21FAF355C002A64DF /* ScriptikNetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98713ED41FAF355C002A64DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98713EDD1FAF355C002A64DF /* ScriptikNetUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98713ECF1FAF355C002A64DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98713EB91FAF355C002A64DF /* ScriptikNet */;
+			targetProxy = 98713ECE1FAF355C002A64DF /* PBXContainerItemProxy */;
+		};
+		98713EDA1FAF355C002A64DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98713EB91FAF355C002A64DF /* ScriptikNet */;
+			targetProxy = 98713ED91FAF355C002A64DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9841EF3D1FAFC90200362119 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9841EF3E1FAFC90200362119 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98713EDF1FAF355C002A64DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		98713EE01FAF355C002A64DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		98713EE21FAF355C002A64DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KK2XBJKFF2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ScriptikNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = na.ScriptikNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		98713EE31FAF355C002A64DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KK2XBJKFF2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ScriptikNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = na.ScriptikNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		98713EE51FAF355C002A64DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScriptikNetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = na.ScriptikNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScriptikNet.app/Contents/MacOS/ScriptikNet";
+			};
+			name = Debug;
+		};
+		98713EE61FAF355C002A64DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScriptikNetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = na.ScriptikNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScriptikNet.app/Contents/MacOS/ScriptikNet";
+			};
+			name = Release;
+		};
+		98713EE81FAF355C002A64DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScriptikNetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = na.ScriptikNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScriptikNet;
+			};
+			name = Debug;
+		};
+		98713EE91FAF355C002A64DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScriptikNetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = na.ScriptikNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScriptikNet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98713EB51FAF355C002A64DF /* Build configuration list for PBXProject "ScriptikNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98713EDF1FAF355C002A64DF /* Debug */,
+				98713EE01FAF355C002A64DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98713EE11FAF355C002A64DF /* Build configuration list for PBXNativeTarget "ScriptikNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98713EE21FAF355C002A64DF /* Debug */,
+				98713EE31FAF355C002A64DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98713EE41FAF355C002A64DF /* Build configuration list for PBXNativeTarget "ScriptikNetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98713EE51FAF355C002A64DF /* Debug */,
+				98713EE61FAF355C002A64DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98713EE71FAF355C002A64DF /* Build configuration list for PBXNativeTarget "ScriptikNetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98713EE81FAF355C002A64DF /* Debug */,
+				98713EE91FAF355C002A64DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98713EB21FAF355C002A64DF /* Project object */;
+}
