@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <CocoaAsyncSocket/GCDAsyncSocket.h>
-#import <CocoaAsyncSocket/GCDAsyncUdpSocket.h>
+#import "GCDAsyncSocket.h"
+#import "GCDAsyncUdpSocket.h"
 
 #define WELCOME_MSG  0
 #define ECHO_MSG     1

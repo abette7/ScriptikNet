@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <CocoaAsyncSocket/CocoaAsyncSocket.h>
+#import "CocoaAsyncSocket.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 @property (weak) IBOutlet NSTextField *currStatus;
